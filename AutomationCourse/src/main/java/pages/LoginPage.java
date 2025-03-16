@@ -15,13 +15,13 @@ public class LoginPage {
 		PageFactory.initElements(driver,this);
 	}
 	@FindBy(xpath="//input[@id='user-name']")private WebElement username;
-	@FindBy(xpath="//input[@id='login-button']")private WebElement password;
+	@FindBy(xpath="//input[@id='password']")private WebElement password;
 	@FindBy(xpath="//input[@id='login-button']")private WebElement clickon;
 	
 	
 	public void enterUsernameOnUsernameField()
 	{
-		username.sendKeys("standard_user");
+		username.sendKeys("locked_out_user");
 	}
 	public void enterPasswordOnPasswordField()
 	{
